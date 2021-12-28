@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BDA</string>
+    <string name="blood_donation_app">Blood Donation App</string>
+    <string name="donate_blood_and_save_lives">Donate Blood and save Lives</string>
+    <string name="what_best_descirbes_you">What Best Descirbes You?</string>
+    <string name="hello_welcome_to_the_application">Hello,Welcome to the Application</string>
+    <string name="recipient_registration">Recipient Registration</string>
+    <string name="donor_registration">Donor Registration</string>
+    <string name="already_registred_sign_in">Already Registred ? Sign In</string>
+    <string name="sign_up_to_continue">Sign up to Continue</string>
+    <string name="recipent_regestration">Recipent Regestration</string>
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_id_number">Enter Id Number</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="go_to_registration_page">GO TO REGISTRATION PAGE</string>
+    <string name="login_page">Login Page</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="sign_in_now">Sign in Now</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t Have an account ? Sign Up</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string-array name="bloodGroups">
+        <item>Select your blood group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+
+</resources>

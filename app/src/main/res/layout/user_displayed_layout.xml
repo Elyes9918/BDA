@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:background="@drawable/background_user_displayed"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_margin="5dp">
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_margin="3dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textColor="@color/Background_Splash"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/bloodgroup"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userPorfileImage"
+                android:layout_width="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp"
+                app:civ_border_color="@color/Background_Splash"
+                app:civ_border_width="1dp"
+                android:src="@drawable/profile_image"/>
+
+            <Button
+                android:id="@+id/contactmeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/buttons_background"
+                android:text="Contact"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
