@@ -127,6 +127,6 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-//This is a test for git
+//This is a test for git (2)
 
 }
