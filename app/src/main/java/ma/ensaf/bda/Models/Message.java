@@ -1,4 +1,4 @@
-package ma.ensaf.bda.Models;
+package ma.ensaf.bda.models;
 
 public class Message {
     public String senderId,receiverId,message,timestamp;

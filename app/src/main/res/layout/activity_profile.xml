@@ -1,104 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainApp.ProfileActivity">
-
+    android:background="@color/newPrimary"
+    tools:context=".activities.Settings.ProfileActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/Background_Splash" />
+        android:background="@color/newPrimary"
+        android:elevation="@dimen/_4sdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profile"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:elevation="@dimen/_4sdp" />
+    </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:id="@+id/type"
-        android:layout_margin="5dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textAllCaps="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="true"/>
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profileImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
         android:src="@drawable/profile_image"
         android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:layout_width="100dp"
-        app:civ_border_width="1dp"
-        app:civ_border_color="@color/Background_Splash"
-        android:layout_height="100dp"/>
+        android:layout_margin="@dimen/_10sdp"/>
 
     <TextView
         android:id="@+id/name"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textAllCaps="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="true"/>
 
     <TextView
         android:id="@+id/email"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:textColor="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/idNumber"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/white"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/phoneNumber"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:textColor="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/bloodgroup"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:textColor="@color/black"
+        android:id="@+id/bloodGroup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/white"
+        android:gravity="center" />
 
     <Button
-        android:id="@+id/backButton"
-        android:layout_marginEnd="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:textSize="15sp"
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_14ssp"
         android:gravity="center"
-        android:background="@drawable/buttons_background"
-        android:text="Back"
-        android:textStyle="bold"
         android:textColor="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:background="@drawable/edit_text_bg"
+        android:text="@string/edit_profile"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/edit_text_bg"
+        android:text="@string/contact"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:visibility="gone"/>
 
 
 </LinearLayout>

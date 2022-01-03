@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    android:background="@color/Background_Splash"
-    tools:context=".Chat.Activities.ChatActivity">
+    android:background="@color/newPrimary"
+    tools:context=".activities.chat.ChatActivity">
 
     <View
         android:id="@+id/viewBackground"
@@ -23,7 +22,7 @@
         android:id="@+id/headerBackground"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/Background_Splash"
+        android:background="@color/newPrimary"
         app:layout_constraintBottom_toTopOf="@id/viewSupporter"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -89,7 +88,7 @@
         android:id="@+id/viewSupporter"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/Background_Splash"
+        android:background="@color/newPrimary"
         android:layout_marginTop="@dimen/_12sdp"
         app:layout_constraintTop_toBottomOf="@id/imageBack"/>
 
@@ -120,7 +119,7 @@
             android:layout_marginStart="@dimen/_4sdp"
             android:layout_marginLeft="@dimen/_4sdp"
             android:padding="@dimen/_8sdp"
-            android:src="@drawable/ic_send"
+            android:src="@drawable/ic_send_message"
             app:tint="@color/white"/>
 
     </FrameLayout>
@@ -159,6 +158,5 @@
         android:textColor="@color/white"
         android:visibility="gone"
         android:padding="@dimen/_2sdp"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

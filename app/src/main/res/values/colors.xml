@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#A1411B</color>
-    <color name="purple_500">#732000</color>
-    <color name="purple_700">#732000</color>
+    <color name="primary">#be5025</color>
+    <color name="newPrimary">#7f0000</color>
+    <color name="border_profile_image">#FF000000</color>
+    <color name="primary_light">#d87067</color>
+    <color name="primary_dark">#6f1216</color>
+    <color name="primary_text">#212121</color>
+    <color name="red">#aa0000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="Background_Splash">#5C8DF6</color>
-    <color name="EndColor">#1E90FF</color>
 
-    <color name="red_shade">#F60049</color>
-    <color name="primary_dark">#454B57</color>
-    <color name="primary_text">#93A0BA</color>
+
+
+    <color name="colorPrimaryTheme"></color>
+    <color name="colorPrimaryVariantTheme"></color>
+    <color name="colorOnPrimaryTheme"></color>
+    <color name="colorSecondaryTheme"></color>
+    <color name="colorSecondaryVariantTheme"></color>
+
     <color name="secondary_text">#CFD9ED</color>
-    <color name="light_shade">#DBE3F4</color>
-    <color name="background_App">#5C8DF6</color>
-
-
-
-    <color name="input_background">#ECECEC</color>
-    <color name="icon_background">#5D5D81</color>
-    <color name="received_message_background">#090D16</color>
     <color name="green">#008000</color>
-    <color name="gradient1">#5A677E</color>
-    <color name="gradient2">#F4F4F4</color>
-
-
-
-
-
-
 </resources>

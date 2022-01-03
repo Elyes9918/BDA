@@ -1,24 +1,51 @@
-package ma.ensaf.bda.Utilities;
+package ma.ensaf.bda.utilities;
 
 import java.util.HashMap;
 
 public class Constants {
-    public static final String KEY_TABLE="users";
-    public static final String KEY_ID="id";
-    public static final String KEY_NAME="name";
-    public static final String KEY_EMAIL="email";
-    public static final String KEY_ID_NUMBER="idnumber";
-    public static final String KEY_PHONE_NUMBER="phonenumber";
-    public static final String KEY_BLOOD_GROUP="bloodgroup";
-    public static final String KEY_TYPE="type";
-    public static final String KEY_SEARCH="search";
-    public static final String KEY_PROFILE_PIC="profilepictureurl";
-    public static final String KEY_USER="user";
+
+    public static final int SPLASH_SCREEN = 2300;
+
+    // User keys
+    public static final String KEY_PREFERENCE_NAME = "bloodDonationAppPreference";
+    public static final String KEY_IS_SIGNED_IN = "isSignedIn";
+    public static final String KEY_COLLECTION_USERS = "users";
+    public static final String KEY_USER = "user";
+    public static final String KEY_ID = "id";
+    public static final String KEY_NAME = "name";
+    public static final String KEY_EMAIL = "email";
+    public static final String KEY_PHONE_NUMBER = "phoneNumber";
+    public static final String KEY_BLOOD_GROUP = "bloodGroup";
+    public static final String KEY_TYPE = "type";
+    public static final String KEY_SEARCH = "search";
+    public static final String KEY_PROFILE_PICTURE_URL = "profilePictureUrl";
+    public static final String KEY_ANONYMOUS = "anonymous";
     public static final String KEY_FCM_TOKEN ="fcmToken";
 
+    // Blood Groups
+    public static final String VALUE_A_PLUS = "A+";
+    public static final String VALUE_A_MINUS = "A-";
+    public static final String VALUE_B_PLUS = "B+";
+    public static final String VALUE_B_MINUS = "B-";
+    public static final String VALUE_AB_PLUS = "AB+";
+    public static final String VALUE_AB_MINUS = "AB-";
+    public static final String VALUE_O_PLUS = "O+";
+    public static final String VALUE_O_MINUS = "O-";
+
+    // Email
+
+    public static final String KEY_COLLECTION_EMAILS = "emails";
+    public static final String EMAIL = "leilaicarus@gmail.com";
+    public static final String PASSWORD = "leila_icarus_333";
+
+    // Notification keys
+    public static final String KEY_COLLECTION_NOTIFICATIONS = "notifications";
+    public static final String KEY_RECEIVER_ID = "receiverId";
+    public static final String KEY_SENDER_ID = "senderId";
+    public static final String TEXT = "text";
+    public static final String DATE = "date";
+
     public static final String KEY_TABLE_CHAT="chat";
-    public static final String KEY_SENDER_ID="senderId";
-    public static final String KEY_RECEIVER_ID="receiverId";
     public static final String KEY_MESSAGE="message";
     public static final String KEY_TIMESTAMP="timestamp";
     public static final String KEY_SENDER_NAME="senderName";
@@ -42,7 +69,7 @@ public class Constants {
             remoteMsgHeaders=new HashMap<>();
             remoteMsgHeaders.put(
                     REMOTE_MSG_AUTHORIZATION,
-                    "key=AAAAqsKtA_Y:APA91bH88PUdu86AcJ32WIKf1E1Zi3sTHQl1cLCm-Uv-gFwzsKMUyBF_Oaqm4A3ukb71bD_Xl5uBIu8gmbcfDsrSl3e6CimX7TuAr5SR7kwsQkqw-930gy09cYIZMWC8deKc4-_8z-NV"
+                    "key=AAAAXIGvZZc:APA91bG8f_7SY9yzQ0ObwLp1PfFkfrVcqaikIEfnpQ-MPTabVYrgsR064CYfoEDNUcRBHH7sZmts7DAOWCtL_o7SpNCWB4Ei2Jvj9p63fjbA4a2qKrhrWtogNPQvm38MtVLDcMC0Edd_"
 
             );
             remoteMsgHeaders.put(
