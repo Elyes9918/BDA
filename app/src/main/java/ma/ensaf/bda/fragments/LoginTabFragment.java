@@ -2,6 +2,7 @@ package ma.ensaf.bda.fragments;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
@@ -25,6 +26,8 @@ import ma.ensaf.bda.activities.Settings.ForgotPasswordActivity;
 import ma.ensaf.bda.activities.NewMainActivity;
 import ma.ensaf.bda.databinding.LoginTabFragmentBinding;
 
+import static android.graphics.Color.WHITE;
+
 public class LoginTabFragment extends Fragment {
 
     LoginTabFragmentBinding binding;
@@ -44,7 +47,6 @@ public class LoginTabFragment extends Fragment {
 
         init(binding.getRoot());
         startAnimation();
-
         setListener();
 
         return binding.getRoot();

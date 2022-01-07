@@ -62,7 +62,6 @@ public class SignUpDonorTabFragment extends Fragment {
 
         init();
         setListeners();
-
         return binding.getRoot();
     }
 

@@ -39,13 +39,11 @@ public class UserHomeAdapter extends RecyclerView.Adapter<UserHomeAdapter.UserHo
 
     @Override
     public void onBindViewHolder(@NonNull UserHomeViewHolder holder, int position) {
-
         holder.setUserData(userList.get(position));
     }
 
     @Override
     public int getItemCount() {
-        //return userList.size();
         return userList.size();
     }
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/WhiteBackground"
     tools:context=".activities.chat.MainChatActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -14,7 +15,7 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/newPrimary" />
+        android:background="@color/MainRed" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"

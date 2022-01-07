@@ -562,6 +562,10 @@ public class NewMainActivity extends BaseActivity implements UserListener, UserL
                 Intent intent14 = new Intent(getApplicationContext(), MainChatActivity.class);
                 startActivity(intent14);
                 break;
+            case R.id.about:
+                Intent intent15 = new Intent(getApplicationContext(),AboutActivity.class);
+                startActivity(intent15);
+                break;
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START);
         return true;

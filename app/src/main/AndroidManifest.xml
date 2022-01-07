@@ -11,19 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodDonationApp">
-        <activity android:name="ma.ensaf.bda.activities.chat.MainChatActivity"></activity>
-        <activity android:name="ma.ensaf.bda.activities.chat.ChatActivity" />
-        <activity android:name="ma.ensaf.bda.activities.NewMainActivity" />
-        <activity android:name="ma.ensaf.bda.activities.NewLoginActivity" />
-        <activity android:name="ma.ensaf.bda.activities.Settings.ChangePhoneNumberActivity" />
-        <activity android:name="ma.ensaf.bda.activities.Settings.ChangePasswordActivity" />
-        <activity android:name="ma.ensaf.bda.activities.Settings.ChangeEmailActivity" />
-        <activity android:name="ma.ensaf.bda.activities.Settings.EditProfileActivity" />
-        <activity android:name="ma.ensaf.bda.activities.Settings.SettingsActivity" />
-        <activity android:name="ma.ensaf.bda.activities.Settings.ForgotPasswordActivity" />
-        <activity android:name="ma.ensaf.bda.activities.CategorySelectedActivity" />
-        <activity android:name="ma.ensaf.bda.activities.Settings.ProfileActivity" />
-        <activity android:name="ma.ensaf.bda.activities.SplashScreenActivity">
+        <activity android:name=".activities.AboutActivity"></activity>
+        <activity android:name=".activities.chat.MainChatActivity" />
+        <activity android:name=".activities.chat.ChatActivity" />
+        <activity android:name=".activities.NewMainActivity" />
+        <activity android:name=".activities.NewLoginActivity" />
+        <activity android:name=".activities.Settings.ChangePhoneNumberActivity" />
+        <activity android:name=".activities.Settings.ChangePasswordActivity" />
+        <activity android:name=".activities.Settings.ChangeEmailActivity" />
+        <activity android:name=".activities.Settings.EditProfileActivity" />
+        <activity android:name=".activities.Settings.SettingsActivity" />
+        <activity android:name=".activities.Settings.ForgotPasswordActivity" />
+        <activity android:name=".activities.CategorySelectedActivity" />
+        <activity android:name=".activities.Settings.ProfileActivity" />
+        <activity android:name=".activities.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,7 +33,7 @@
         </activity>
 
         <service
-            android:name="ma.ensaf.bda.firebase.MessagingService"
+            android:name=".firebase.MessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

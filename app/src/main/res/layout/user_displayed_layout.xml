@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="@dimen/_110sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="@drawable/background_user_displayed_chat"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:id="@+id/mainLayout"
@@ -13,8 +17,11 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userProfileImage"
-            android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_100sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/MainRed"
             android:src="@drawable/profile_image"/>
 
         <LinearLayout
@@ -32,7 +39,8 @@
                 android:layout_margin="@dimen/_1sdp"
                 android:textSize="@dimen/_20ssp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/MainRed"
                 android:textAlignment="textStart"
                 android:textAllCaps="true"/>
 
@@ -41,8 +49,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_1sdp"
+                android:fontFamily="@font/lato_regular"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/PrimaryText"
                 android:textAlignment="textStart"
                 android:textAllCaps="true"/>
 
@@ -51,7 +60,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_1sdp"
-                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/PrimaryText"
                 android:textAlignment="textStart" />
 
             <TextView
@@ -59,7 +69,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_1sdp"
-                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/PrimaryText"
                 android:textAlignment="textStart" />
 
         </LinearLayout>
@@ -70,18 +81,19 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/buttons_background"
+            android:background="@drawable/button_bg"
             android:text="Contact"
             android:textAllCaps="false"
             android:visibility="gone"/>
     </LinearLayout>
 
+    <!--
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_2sdp"
+        android:layout_height="@dimen/_1sdp"
         android:layout_below="@id/mainLayout"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_4sdp"
-        android:background="@color/black"/>
+        android:background="@color/MainRed"/> -->
 
 </RelativeLayout>

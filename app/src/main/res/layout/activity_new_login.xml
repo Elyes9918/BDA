@@ -50,7 +50,7 @@
             app:layout_constraintVertical_bias="0"
             android:background="#0000ffff"
             app:tabTextColor="@color/white"
-            app:tabSelectedTextColor="@color/primary"
+            app:tabSelectedTextColor="@color/PrimaryText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

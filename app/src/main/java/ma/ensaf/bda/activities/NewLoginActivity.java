@@ -20,9 +20,7 @@ public class NewLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityNewLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         startAnimation();
-
     }
 
     private void startAnimation() {

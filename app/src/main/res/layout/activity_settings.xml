@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/newPrimary"
+    android:background="@color/WhiteBackground"
     tools:context=".activities.Settings.SettingsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/newPrimary"
+        android:background="@color/MainRed"
         android:elevation="@dimen/_4sdp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
@@ -38,10 +38,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profileImage"
                 android:layout_width="@dimen/_60sdp"
                 android:layout_height="@dimen/_60sdp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/MainRed"
                 android:src="@drawable/profile_image"
                 android:layout_margin="@dimen/_10sdp"/>
 
@@ -56,15 +59,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/_16ssp"
+                    android:fontFamily="@font/lato_regular"
                     android:textStyle="bold"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/PrimaryText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/_10ssp"
                     android:textStyle="bold"
                     android:text="@string/view_profile"
-                    android:textColor="#bbb" />
+                    android:textColor="@color/PrimaryText" />
 
             </LinearLayout>
 
@@ -77,7 +81,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:tint="#bbb"/>
+            android:tint="@color/PrimaryText"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -94,15 +98,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/email"
+                android:fontFamily="@font/lato_regular"
                 android:textSize="@dimen/_16ssp"
-                android:textColor="@color/white"
+                android:textColor="@color/PrimaryText"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_10ssp"
-                android:textColor="#bbb"/>
+                android:textColor="@color/PrimaryText"/>
         </LinearLayout>
         <ImageView
             android:layout_width="wrap_content"
@@ -111,7 +116,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:tint="#bbb"/>
+            android:tint="@color/PrimaryText"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -128,8 +133,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/password"
+                android:fontFamily="@font/lato_regular"
                 android:textSize="@dimen/_16ssp"
-                android:textColor="@color/white"
+                android:textColor="@color/PrimaryText"
                 android:textStyle="bold"/>
         </LinearLayout>
         <ImageView
@@ -139,7 +145,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:tint="#bbb"/>
+            android:tint="@color/PrimaryText"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -157,14 +163,15 @@
                 android:layout_height="wrap_content"
                 android:text="@string/blood_group"
                 android:textSize="@dimen/_16ssp"
-                android:textColor="@color/white"
+                android:textColor="@color/PrimaryText"
+                android:fontFamily="@font/lato_regular"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/bloodGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_10ssp"
-                android:textColor="#bbb"/>
+                android:textColor="@color/PrimaryText"/>
         </LinearLayout>
         <ImageView
             android:layout_width="wrap_content"
@@ -173,7 +180,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:tint="#bbb"/>
+            android:tint="@color/PrimaryText"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -191,14 +198,16 @@
                 android:layout_height="wrap_content"
                 android:text="@string/phone_number"
                 android:textSize="@dimen/_16ssp"
-                android:textColor="@color/white"
+                android:textColor="@color/PrimaryText"
+                android:fontFamily="@font/lato_regular"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/phoneNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_10ssp"
-                android:textColor="#bbb"/>
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/PrimaryText"/>
         </LinearLayout>
         <ImageView
             android:layout_width="wrap_content"
@@ -207,7 +216,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:tint="#bbb"/>
+            android:tint="@color/PrimaryText"/>
     </RelativeLayout>
 
 
@@ -257,7 +266,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/log_out"
                 android:textSize="@dimen/_16ssp"
-                android:textColor="@color/white"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/PrimaryText"
                 android:textStyle="bold"/>
         </LinearLayout>
         <ImageView
@@ -268,7 +278,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:tint="#bbb"/>
+            android:tint="@color/PrimaryText"/>
     </RelativeLayout>
 
 

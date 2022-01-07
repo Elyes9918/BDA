@@ -92,6 +92,7 @@ public class ProfileActivity extends BaseActivity implements UserListener {
             binding.profileImage.setImageResource(R.drawable.profile_image);
             binding.name.setText(R.string.anonymous_donor);
             binding.phoneNumber.setVisibility(View.GONE);
+            binding.email.setVisibility(View.GONE);
         } else {
             Glide.with(this)
                     .load(user.getProfilePictureUrl())

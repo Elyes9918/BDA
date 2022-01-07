@@ -58,9 +58,7 @@ public class UserAdapterChat extends RecyclerView.Adapter<UserAdapterChat.UserCh
 
     @Override
     public void onBindViewHolder(@NonNull UserChatViewHolder holder, int position) {
-
         holder.setUserData(userList.get(position));
-
     }
 
     @Override
@@ -88,14 +86,10 @@ public class UserAdapterChat extends RecyclerView.Adapter<UserAdapterChat.UserCh
             lastMessage(user.getId());
 
 
-            if(user.getAvailability().equals("online")){
+            if(user.getAvailability().equals("online")) {
                 binding.userPorfileImageChat.setBorderColor(Color.parseColor("#45FF00"));
                 binding.userPorfileImageChat.setBorderWidth(4);
-            }else{
-                binding.userPorfileImageChat.setBorderColor(Color.parseColor("#FFBE50"));
-                binding.userPorfileImageChat.setBorderColor(4);
             }
-
 
 
             binding.getRoot().setOnClickListener(v -> messageListener.onUserClicked(user));

@@ -17,7 +17,7 @@
         android:icon="@drawable/compatible"
         android:title="@string/compatible_with_me"/>
 
-    <item android:title="@string/blood_groups">
+    <item android:title="@string/blood_groups" >
 
         <menu>
             <group android:checkableBehavior="single">

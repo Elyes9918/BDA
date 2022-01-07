@@ -37,6 +37,10 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             }
         });
 
+        binding.discard.setOnClickListener(v -> {
+            onBackPressed();
+        });
+
     }
 
     private void sendResetEmail() {

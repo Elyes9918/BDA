@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
     tools:openDrawer="start"
-    android:background="@color/newPrimary"
+    android:background="@color/WhiteBackground"
     android:fitsSystemWindows="true"
     tools:context=".activities.NewMainActivity">
 
@@ -20,7 +20,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/newPrimary"
+            android:background="@color/MainRed"
             android:elevation="@dimen/_4sdp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
@@ -34,23 +34,25 @@
                     android:layout_height="wrap_content"
                     android:text="@string/app_name"
                     android:textColor="@color/white"
-                    android:textSize="18sp"
+
+                    android:fontFamily="@font/italiana_regular"
+                    android:textSize="25sp"
                     android:textStyle="bold"/>
 
                 <ImageView
                     android:id="@+id/chat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginRight="20dp"
                     android:layout_alignParentEnd="true"
                     android:tint="@color/white"
                     android:src="@drawable/ic_send" />
 
                 <ImageView
                     android:id="@+id/settings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="15dp"
                     android:layout_toLeftOf="@+id/chat"
                     android:tint="@color/white"
                     android:src="@drawable/ic_settings" />
@@ -70,7 +72,6 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="20dp"
             android:clipToPadding="false"
             android:overScrollMode="never"
             android:scrollbars="none">
@@ -83,7 +84,11 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
 
                     <TextView
                         android:id="@+id/textType"
@@ -91,8 +96,8 @@
                         android:layout_height="50dp"
                         android:paddingTop="3dp"
                         android:paddingLeft="20dp"
-                        android:textColor="@color/white"
-                        android:background="@drawable/background_recyler_view"
+                        android:fontFamily="@font/lato_light"
+                        android:textColor="@color/PrimaryText"
                         android:textSize="30sp"
                         android:textStyle="bold"
                         android:layout_marginBottom="5dp"/>
@@ -108,17 +113,19 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp">
+                    android:background="#E4E4E4"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/textCompatible"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:background="@drawable/background_recyler_view"
                         android:paddingTop="3dp"
                         android:paddingLeft="20dp"
                         android:text="@string/compatible_with_me"
-                        android:textColor="@color/white"
+                        android:fontFamily="@font/lato_light"
+                        android:textColor="@color/PrimaryText"
                         android:textSize="30sp"
                         android:textStyle="bold"
                         android:layout_marginBottom="5dp"/>
@@ -161,6 +168,9 @@
                         android:id="@+id/recyclerViewCompatible"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="20dp"
                         android:layout_below="@+id/textCompatible" />
 
                 </RelativeLayout>
@@ -175,7 +185,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/blood_groups"
-                        android:textColor="@color/white"
+                        android:textColor="@color/PrimaryText"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/lato_light"
                         android:textSize="30sp"
                         android:textStyle="bold"
                         android:layout_marginBottom="5dp"/>
@@ -183,7 +195,7 @@
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="0dp"
                         android:clipToPadding="false"
                         android:overScrollMode="never"
                         android:scrollbars="none"
@@ -199,65 +211,49 @@
                                 android:layout_width="130dp"
                                 android:layout_height="130dp"
                                 android:src="@drawable/ap"
-                                android:background="@color/black"
-                                android:elevation="5dp"
-                                android:layout_marginEnd="20dp"/>
+                                android:elevation="5dp" />
                             <ImageView
                                 android:id="@+id/aMinusImage"
                                 android:layout_width="130dp"
                                 android:layout_height="130dp"
                                 android:src="@drawable/am"
-                                android:background="@color/black"
-                                android:elevation="5dp"
-                                android:layout_marginEnd="20dp"/>
+                                android:elevation="5dp"/>
                             <ImageView
                                 android:id="@+id/bPlusImage"
                                 android:layout_width="130dp"
                                 android:layout_height="130dp"
                                 android:src="@drawable/bp"
-                                android:background="@color/black"
-                                android:elevation="5dp"
-                                android:layout_marginEnd="20dp"/>
+                                android:elevation="5dp"/>
                             <ImageView
                                 android:id="@+id/bMinusImage"
                                 android:layout_width="130dp"
                                 android:layout_height="130dp"
                                 android:src="@drawable/bm"
-                                android:background="@color/black"
-                                android:elevation="5dp"
-                                android:layout_marginEnd="20dp"/>
+                                android:elevation="5dp"/>
                             <ImageView
                                 android:id="@+id/abPlusImage"
                                 android:layout_width="130dp"
                                 android:layout_height="130dp"
                                 android:src="@drawable/abp"
-                                android:background="@color/black"
-                                android:elevation="5dp"
-                                android:layout_marginEnd="20dp"/>
+                                android:elevation="5dp"/>
                             <ImageView
                                 android:id="@+id/abMinusImage"
                                 android:layout_width="130dp"
                                 android:layout_height="130dp"
                                 android:src="@drawable/abm"
-                                android:background="@color/black"
-                                android:elevation="5dp"
-                                android:layout_marginEnd="20dp"/>
+                                android:elevation="5dp"/>
                             <ImageView
                                 android:id="@+id/oPlusImage"
                                 android:layout_width="130dp"
                                 android:layout_height="130dp"
                                 android:src="@drawable/op"
-                                android:background="@color/black"
-                                android:elevation="5dp"
-                                android:layout_marginEnd="20dp"/>
+                                android:elevation="5dp"/>m
                             <ImageView
                                 android:id="@+id/oMinusImage"
                                 android:layout_width="130dp"
                                 android:layout_height="130dp"
                                 android:src="@drawable/om"
-                                android:background="@color/black"
-                                android:elevation="5dp"
-                                android:layout_marginEnd="20dp"/>
+                                android:elevation="5dp"/>
                         </LinearLayout>
                     </HorizontalScrollView>
 
@@ -269,7 +265,6 @@
 
     </LinearLayout>
 
-
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"
         android:layout_width="wrap_content"
@@ -277,10 +272,23 @@
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu"
         android:layout_gravity="start"
-        app:itemIconTint="@color/primary"
-        app:itemTextColor="@color/white"
-        android:background="@color/newPrimary"/>
+        app:itemIconTint="@color/MainRed"
+        app:itemTextColor="@color/PrimaryText"
+        android:background="@color/WhiteBackground"/>
 
+
+    <!--
+     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/MainRed"
+        app:itemTextColor="@color/PrimaryText"
+        android:background="@color/WhiteBackground"/>
+    -->
 
 
 

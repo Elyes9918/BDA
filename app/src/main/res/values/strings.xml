@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Blood Donation App</string>
-    <string name="blood_donation_app">Blood Donation App</string>
-    <string name="donate_blood_and_save_lives">Donate blood and save lives!</string>
+    <string name="app_name">LifeSource</string>
+    <string name="blood_donation_app">LifeSource</string>
+    <string name="donate_blood_and_save_lives">Donate Because You Can</string>
     <string name="hello_welcome_to_this_application">Hello, welcome to this application</string>
     <string name="what_best_describes_you">What best describes you?</string>
     <string name="donor_registration">Donor Registration</string>
@@ -59,7 +59,7 @@
     <string name="reset_your_password_here">Reset your password here</string>
     <string name="sign_in_to_continue">Sign in to continue</string>
     <string name="please_enter_your_email_address">Please enter your email address</string>
-    <string name="reset_my_email">Reset my email</string>
+    <string name="reset_my_email">Reset</string>
     <string name="stay_anonymous">Stay Anonymous?</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
@@ -76,7 +76,7 @@
     <string name="edit_profile">Edit profile</string>
     <string name="change_photo">Change photo</string>
     <string name="reset_my_password">Reset my password</string>
-    <string name="reset_your_email_here">Reset your email here</string>
+    <string name="reset_your_email_here">Reset your email</string>
     <string name="enter_current_email">Enter current email</string>
     <string name="enter_new_email">Enter new email</string>
     <string name="enter_new_password">Enter new password</string>
@@ -84,7 +84,7 @@
     <string name="select_blood_group">Select Blood Group</string>
     <string name="search">search...</string>
     <string name="select_your_blood_group">Select your blood group</string>
-    <string name="reset_your_phone_number_here">Reset your phone number here</string>
+    <string name="reset_your_phone_number_here">Reset your phone number</string>
     <string name="enter_new_phone_number">Enter new phone number</string>
     <string name="anonymous_mode">Anonymous mode</string>
     <string name="welcome_to_blood_donation_world">Welcome to blood donation world</string>
@@ -104,4 +104,5 @@
     <string name="type">Type</string>
     <string name="chat">Chat</string>
     <string name="contact">Contact</string>
+    <string name="reset">Reset</string>
 </resources>
