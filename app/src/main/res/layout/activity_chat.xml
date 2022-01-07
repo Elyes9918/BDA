@@ -121,7 +121,7 @@
             android:layout_marginLeft="@dimen/_4sdp"
             android:padding="@dimen/_8sdp"
             android:src="@drawable/ic_send_message"
-            app:tint="@color/white"/>
+            app:tint="@color/MainRed"/>
 
     </FrameLayout>
 
@@ -141,8 +141,8 @@
         android:inputType="text"
         android:paddingStart="@dimen/_16sdp"
         android:paddingEnd="@dimen/_16sdp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/secondary_text"
+        android:textColor="@color/PrimaryText"
+        android:textColorHint="@color/PrimaryText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/layoutSend"
         app:layout_constraintStart_toStartOf="parent"/>
