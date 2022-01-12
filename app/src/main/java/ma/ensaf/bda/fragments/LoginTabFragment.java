@@ -18,10 +18,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import ma.ensaf.bda.R;
+import ma.ensaf.bda.activities.NewLoginActivity;
 import ma.ensaf.bda.activities.Settings.ForgotPasswordActivity;
 import ma.ensaf.bda.activities.NewMainActivity;
 import ma.ensaf.bda.databinding.LoginTabFragmentBinding;
@@ -33,18 +37,17 @@ public class LoginTabFragment extends Fragment {
     LoginTabFragmentBinding binding;
 
     float v = 0;
-
     boolean isPasswordVisible;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         binding = LoginTabFragmentBinding.inflate(getLayoutInflater());
         //ViewGroup root = (ViewGroup) inflater.inflate(R.layout.login_tab_fragment, container, false);
-
         init(binding.getRoot());
         startAnimation();
         setListener();
@@ -52,11 +55,14 @@ public class LoginTabFragment extends Fragment {
         return binding.getRoot();
     }
 
+
+
     private void init(ViewGroup root) {
 
         mAuth = FirebaseAuth.getInstance();
     }
 
+    
     private void setListener()
     {
         setPasswordVisibilityListener();
@@ -75,8 +81,6 @@ public class LoginTabFragment extends Fragment {
             }
         };
 
-
-
         binding.loginButton.setOnClickListener(v -> {
             if(isValidSignInDetails())
             {
@@ -88,6 +92,20 @@ public class LoginTabFragment extends Fragment {
             Intent intent = new Intent(getContext(), ForgotPasswordActivity.class);
             startActivity(intent);
         });
+
+        /*
+        binding.fabGoogle.setOnClickListener(v -> {
+            showToast("Google Login");
+        });
+
+        binding.fabFacebook.setOnClickListener(v -> {
+            showToast("Facebook Login");
+        });
+
+        binding.fabTwiiter.setOnClickListener(v ->{
+            showToast("Twitter Login");
+        });
+    */
     }
 
     private void signIn()

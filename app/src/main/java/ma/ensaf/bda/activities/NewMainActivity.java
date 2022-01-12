@@ -15,6 +15,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.identity.SignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -60,6 +72,9 @@ public class NewMainActivity extends BaseActivity implements UserListener, UserL
     private TextView navFullName, navEmail, navBloodGroup, navType;
 
     private boolean loggedIn = true;
+
+    private SignInClient googleSignInClient;
+    private GoogleSignInClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -493,6 +508,23 @@ public class NewMainActivity extends BaseActivity implements UserListener, UserL
         startActivity(intent);
     }
 
+    private void signOut() {
+        GoogleSignIn.getClient(this,new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).build())
+                .signOut().addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Intent intent9 = new Intent(getApplicationContext(), NewLoginActivity.class);
+                startActivity(intent9);
+                finish();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId())
@@ -544,6 +576,7 @@ public class NewMainActivity extends BaseActivity implements UserListener, UserL
             case R.id.logout:
                 status("offline");
                 loggedIn = false;
+                signOut();
                 FirebaseAuth.getInstance().signOut();
                 Intent intent9 = new Intent(getApplicationContext(), NewLoginActivity.class);
                 startActivity(intent9);

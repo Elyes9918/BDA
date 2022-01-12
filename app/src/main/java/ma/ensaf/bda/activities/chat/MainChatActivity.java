@@ -110,7 +110,7 @@ public class MainChatActivity extends BaseActivity implements UserListener {
         });
 
         // updateToken(FirebaseMessaging.getInstance().getToken().toString());
-
+        binding.progressBar.setVisibility(View.GONE);
     }
 
     private void UsersWhichTalkedtoCurrentId() {

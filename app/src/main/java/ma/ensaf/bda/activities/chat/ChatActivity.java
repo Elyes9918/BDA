@@ -209,7 +209,7 @@ public class ChatActivity extends BaseActivity {
                 sendNotification(body.toString());
 
             }catch(Exception exception){
-                showToast(exception.getMessage());
+                //showToast(exception.getMessage());
 
             }
         }
@@ -231,7 +231,8 @@ public class ChatActivity extends BaseActivity {
                             JSONArray results=responseJson.getJSONArray("results");
                             if(responseJson.getInt("failure")==1){
                                 JSONObject error = (JSONObject) results.get(0);
-                                showToast(error.getString("error"));
+                                //showToast(error.getString("error"));
+                                //Notification Error is HERE (INVALID REGISTRATION)
                                 return;
                             }
                         }
@@ -248,8 +249,7 @@ public class ChatActivity extends BaseActivity {
 
             @Override
             public void onFailure(@NonNull  Call<String> call,@NonNull Throwable t) {
-                //showToast(t.getMessage());
-                //showToast("From Faillure");
+
             }
         });
     }

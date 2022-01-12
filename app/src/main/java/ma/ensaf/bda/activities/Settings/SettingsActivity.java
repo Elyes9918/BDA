@@ -16,6 +16,10 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -68,6 +72,23 @@ public class SettingsActivity extends BaseActivity {
 
     }
 
+    private void signOut() {
+        GoogleSignIn.getClient(this,new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).build())
+                .signOut().addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Intent intent9 = new Intent(getApplicationContext(), NewLoginActivity.class);
+                startActivity(intent9);
+                finish();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
+    }
+
     private void setListeners() {
         fetchDataListener();
 
@@ -100,6 +121,7 @@ public class SettingsActivity extends BaseActivity {
         binding.logout.setOnClickListener(v -> {
             status("offline");
             loggedIn = false;
+            signOut();
             FirebaseAuth.getInstance().signOut();
             Intent intent = new Intent(getApplicationContext(), NewLoginActivity.class);
             startActivity(intent);
@@ -107,6 +129,8 @@ public class SettingsActivity extends BaseActivity {
         });
 
     }
+
+
 
     private void fetchDataListener() {
         reference.addValueEventListener(new ValueEventListener() {

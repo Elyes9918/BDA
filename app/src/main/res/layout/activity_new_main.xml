@@ -10,6 +10,22 @@
     android:fitsSystemWindows="true"
     tools:context=".activities.NewMainActivity">
 
+    <FrameLayout
+        android:id="@+id/Framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WhiteBackground">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -276,9 +292,8 @@
         app:itemTextColor="@color/PrimaryText"
         android:background="@color/WhiteBackground"/>
 
-
     <!--
-     <com.google.android.material.navigation.NavigationView
+    <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -288,7 +303,7 @@
         app:itemIconTint="@color/MainRed"
         app:itemTextColor="@color/PrimaryText"
         android:background="@color/WhiteBackground"/>
-    -->
+        -->
 
 
 

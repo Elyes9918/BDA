@@ -68,6 +68,21 @@ public class SignUpRecipientTabFragment extends Fragment {
                 signUp();
             }
         });
+
+        /*
+        binding.fabGoogle.setOnClickListener(v -> {
+            showToast("Google Recipient Register");
+        });
+
+        binding.fabFacebook.setOnClickListener(v -> {
+            showToast("Facebook Recipient Register");
+        });
+
+        binding.fabTwiiter.setOnClickListener(v ->{
+            showToast("Twitter Recipient Register");
+        });
+
+         */
     }
 
     private void showToast(String message)

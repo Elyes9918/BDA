@@ -10,8 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
         android:theme="@style/Theme.BloodDonationApp">
-        <activity android:name=".activities.AboutActivity"></activity>
+        <activity android:name=".fragments.thirdPartyLogin.SignUpRecipientFragTP"></activity>
+        <activity android:name=".fragments.thirdPartyLogin.SignUpDonorFragTP" />
+        <activity android:name=".fragments.thirdPartyLogin.thirdPartySignUp" />
+        <activity android:name=".activities.AboutActivity" />
         <activity android:name=".activities.chat.MainChatActivity" />
         <activity android:name=".activities.chat.ChatActivity" />
         <activity android:name=".activities.NewMainActivity" />

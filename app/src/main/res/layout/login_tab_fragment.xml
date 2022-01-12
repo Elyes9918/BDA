@@ -86,4 +86,47 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/forgotPassword"/>
 
+    <!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:tint="@null"
+        android:src="@drawable/ic_google"
+        android:layout_below="@id/loginButton"
+        android:elevation="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="80dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:tint="@null"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintHorizontal_bias="1"
+        android:elevation="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/fabGoogle"
+        android:layout_below="@id/loginButton"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTwiiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:tint="@null"
+        android:src="@drawable/ic_twitter"
+        android:elevation="35dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/loginButton"
+        android:layout_toRightOf="@id/fabFacebook"/>-->
+
+
+
 </RelativeLayout>
