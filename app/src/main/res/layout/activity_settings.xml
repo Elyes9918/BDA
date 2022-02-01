@@ -224,7 +224,7 @@
         android:id="@+id/anonymousLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -236,7 +236,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/anonymous_mode"
                 android:textSize="@dimen/_16ssp"
-                android:textColor="@color/white"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/PrimaryText"
                 android:textStyle="bold"/>
         </LinearLayout>
 
